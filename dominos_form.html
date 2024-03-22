@@ -1,0 +1,62 @@
+<DOCTYPE! html>
+  <html lang='en'>
+  <head>
+    <title>Dominos Delivery Survey</title>
+    <meta name='viewport' content='device-width', initial-scale='1.0'/>
+    <meta charset='utf-8'/>
+    <link href='styles.css' rel='stylesheet'>
+  </head>
+  <body class='background'>
+    <div class='container'>
+        <section>
+          <h1 id='title'>Domino's Delivery Satisfaction Form</h1>
+          <p id='description'>Thank you for enjoying delivery... not digiorno's</p>
+        </section>
+        <form id='survey-form' action='' method='post'>
+          <fieldset for='name'><label id='name-label'>Name </label><input name='name' id='name' type='text' placeholder='Enter your name' required></fieldset>
+          <fieldset for='email'><label id='email-label'>Email </label><input name='email' id='email' type='email' placeholder='Enter your Email' required></fieldset>
+          <fieldset for='number'><label id='number-label'>Age (optional) </label><input name='number' id='number'type='number'  min='12' max='99' placeholder='Age'></fieldset>
+          <fieldset><label>How did you order?</label>
+            <select id='dropdown'>
+              <option disabled selected value>Select one</option>
+              <option value='1'>Over the phone</option>
+              <option value='2'>Through the Domino's app</option>
+              <option value='3'>Through the Domino's website</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Would you recommend Domino's to a friend?</legend>
+            <label for='yes' class='inline'><input value='3' type='radio' id='yes' checked name='options'> Yes</label>
+            <label for='no' class='inline'><input value='1' type='radio' id='no'name='options'> No</label>
+            <label for='maybe' class='inline'><input value='2' type='radio' id='maybe' name='options'> Maybe</label>
+          </fieldset>
+          <fieldset>
+            <label>What part of the Domino's experience was the best?</label>
+            <select>
+              <option disabled selected value>Select one</option>
+              <option value='1'>The food</option>
+              <option value='2'>The delivery speed</option>
+              <option value='3'>The customer service</option>
+              <option value='4'>The ordering experience</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>What did you order?</legend>
+            <label for='pizza'><input value='1' name='pizza' type='checkbox' id='pizza'>Pizza</label>
+            <label for='chicken'><input value='2' name='chicken' type='checkbox' id='chicken'>Chicken Wings</label>
+            <label for='desert'><input value='3' name='desert' type='checkbox' id='desert'>Marble Brownie or Lava Cake</label>
+            <label for='soda'><input value='4' name='soda' type='checkbox'id='soda'>Soda</label>
+            <label for='sandwich'><input value='5' name='sandwich' type='checkbox' id='sandwich'>Sandwich</label>
+            <label for='bread-bites'><input value='6' name='bread-bites' type='checkbox'id='bread-bites'>Bread Bites</label>
+            <label for='pasta'><input value='7' name='pasta' type='checkbox'id='pasta'>Pasta</label>
+            <label for='salad'><input value='8' name='salad' type='checkbox' id='salad'>Salad</label>
+          </fieldset>
+          <fieldset>
+            <legend>Any suggestions or comments?</legend>
+            <textarea rows= '5' placeholder='Enter your comments here...'></textarea>
+          </fieldset>
+          <input type='submit' id='submit'>
+        </form>
+      </div>
+    </body>
+  </html>
